@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Adamina' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body onload="initalize();initComparisons();myFunction();">
+	<!--<div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>-->
+	<div class="main" style="display: flex;">
+    <div id="nav"class="nav">
+      <div style="display:flex;align-items:center;"><img id="logo" style="width:90px;padding-left:86px;"src="logo4.png">
+      <div id="nameNav" style="display:none;cursor: pointer;font-size:24px;padding-left:86px;">Nikhil Prajith Kumar</div></div>
+      <div id="nav2" class="nav2">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <!--<div id="toggle"onclick="toggleChange();"class="toggle">
+        <div class="toggleinside">
+          <span></span>
+          <span style="width:65% !important;"></span>
+          <span></span>
+        </div>
+      </div>-->
+    </div>
+
+		<!-- Left content -->
+		<div class="left" style="flex: 0.91;margin:auto;">
+			
+
+            <div style="font-family: 'Libre Baskerville';font-size:52px;padding-bottom:10px;padding-top:25px;">Hi,</div>
+            <div style="font-family: 'Lato';font-size:115px; font-weight:;padding-bottom:0px;    line-height: 72px; margin-top: 30px;">I'm <span style="font-style:;font-family: 'Allura';">Nikhil</span></div>
+            <!--<div style="font-size:25px;font-family: 'Annie Use Your Telescope';color:#6f6d6a;">Computer Science Student</div>-->
+            <div style="cursor:pointer;" onclick="relocate2();"class="connect">Learn More!</div>
+
+        </div>
+
+        <!-- Right content -->
+        <div class="right" style="flex: 1.8;">
+          
+        </div>
+        <!--<div class="Arrow">
+          <span>&#10148;</span>
+        </div>-->
+    </div>
+    <!--<div class="second" style="display:flex;">
+      <div class="left2" style="flex: 1.1;">
+
+      </div>
+
+        <!-- Right content 
+      <div class="right2" style="flex: 1.2;">
+      </div>
+    </div>-->
+    <div class="third">
+      <div class="thirdleft">
+
+        <div class="img-comp-container">
+          <div class="img-comp-img">
+            <img src="https://images.pexels.com/photos/2387311/pexels-photo-2387311.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="420px" height="100%">
+          </div>
+          <div class="img-comp-img img-comp-overlay">
+            <img src="https://images.pexels.com/photos/4555461/pexels-photo-4555461.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" width="420px" height="100%">
+          </div>
+        </div>
+
+      </div>
+      <div class="thirdright">
+        <div class="thirdrighttitle">Student Computer Scientist</div>
+        <div class="thirdrightpara">
+          <p>Hello there, My name is Nikhil and I am first-year college student in the United States pursing a bachelor's degree in Computer Science along with a potential minor in Mathematics. 
+          </p>
+          <p>
+          The specialization I am working towards is Data Science and to continue pursuing this goal I take part in various challenges and work on projects in my free time. Thank you!
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <div style="width:100%;height:auto;background-color: #d6eaec;padding-top: 60px;padding-bottom:25px;background: linear-gradient(30deg, #d6eaec 0%, #d6eaec 38.6%, rgba(255, 255, 255, 1) 50%, rgb(255, 255, 255) 100%);">
+      <div style="position:;"><h2 style="text-align:center; font-size:58px;font-weight:100;font-family: 'Arapey';margin:0px; padding:40px;/*background:linear-gradient(50deg, rgb(211 226 229) 0%, rgb(211 226 229)35.72%, rgba(255, 255, 255, 1) 31%, rgb(255, 255, 255) 100%);*/"id="">Memories</h2></div>
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="https://images.pexels.com/photos/691034/pexels-photo-691034.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" style="width:100%">
+          <!--<div class="text">Caption Text</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="images/img1.JPG" style="width:100%">
+          <!--<div class="text">Caption Two</div>-->
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="images/img3.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="images/img4.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="images/img5.JPG" style="width:100%">
+          <!--<div class="text">Caption Three</div>-->
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+        <br>
+
+        <div style="text-align:center;margin-bottom:80px;">
+          <!--<span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> -->
+        </div>   
+      </div>
+
+
+
+    <div style="position:relative;"><h2 style="text-align:center; font-size:58px;font-weight:100;font-family: 'Arapey';margin:0px; padding:40px;/*background:linear-gradient(50deg, rgb(211 226 229) 0%, rgb(211 226 229)35.72%, rgba(255, 255, 255, 1) 31%, rgb(255, 255, 255) 100%);*/"id="recentTitle">Recent Projects!</h2>
+      <label style="display:none;" class="switch">
+        <input id="check" onclick="change();" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div id="fourth" class="fourth">
+      <div style="cursor:pointer;" onclick="relocate3(1);"class="one">
+        <img src="https://images.pexels.com/photos/1068349/pexels-photo-1068349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        <h2 class="language">PYTHON</h2>
+        <div>Encrpyt/Decrypt!</div>
+      </div>
+      <div style="cursor:pointer;" onclick="relocate3(2);"class="two">
+        <img src="https://images.pexels.com/photos/4386326/pexels-photo-4386326.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        <h2 class="language">JAVA</h2>
+        <div>Simple Calculator!</div>
+      </div>
+      <div style="cursor:pointer;" onclick="relocate3(3);"class="three">
+        <img src="https://images.pexels.com/photos/221004/pexels-photo-221004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+        <h2 class="language">HTML CSS JS</h2>
+        <div>Crack The Code!</div>
+      </div>
+      
+    </div>
+    <div id="fourth2" class="fourth2">
+      <div class="one">
+        <img src="https://images.pexels.com/photos/4600566/pexels-photo-4600566.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        <h2 class="language">BLOG</h2>
+        <div>Changing Times.</div>
+      </div>
+      <div class="two">
+        <img src="https://images.pexels.com/photos/3330139/pexels-photo-3330139.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        <h2 class="language">BLOG</h2>
+        <div>Are we Alone.</div>
+      </div>
+      <div class="three">
+        <img src="https://images.pexels.com/photos/1367180/pexels-photo-1367180.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        <h2 class="language">BLOG</h2>
+        <div>We can fix it.</div>
+      </div>
+      
+    </div>
+    
+    <div class="view" onclick="relocate();">View More!</div>
+    <div class="footer"style="background:#d6eaec;">
+      <div style="align-items:center;display:flex;width:100%;justify-content:center;">
+        <div></div><div style="padding-bottom:15px;font-size:30px;text-align:center;">NIKHIL PRAJITH KUMAR</div><div></div>
+      </div>
+        <div class="icons"style="display:flex;justify-content:center;font-size:28px;">
+          <span class="fa fa-facebook"></span>
+          <span class="fa fa-github"></span>
+          <span class="fa fa-instagram"></span>
+          <span class="fa fa-linkedin"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
