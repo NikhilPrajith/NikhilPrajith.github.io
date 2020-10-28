@@ -11,8 +11,7 @@ html{
   height:100%;
   overflow: auto;
 }
-/*resume: https://www.w3schools.com/howto/howto_js_portfolio_filter.asp
-side pic:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_compare*/
+
 .main{
   width:100%;
   height:100vh;
@@ -26,7 +25,8 @@ side pic:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_comp
   background-position-y: -700px;
   background-position-x: -200px;
   height:95%;
-  /*https://images.pexels.com/photos/2350345/pexels-photo-2350345.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260*/
+  background-repeat: no-repeat;
+  
 }
 .toggle{
   height:46px;
@@ -106,10 +106,7 @@ side pic:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_image_comp
   margin:auto;
 }
 .left2{
-  /*background-image: url("https://images.pexels.com/photos/3032056/pexels-photo-3032056.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");*/
-  /*background-image: url("https://images.pexels.com/photos/4419895/pexels-photo-4419895.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  
-  /*https://images.pexels.com/photos/2384656/pexels-photo-2384656.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260*/
+
   background-image: url("https://images.pexels.com/photos/2384656/pexels-photo-2384656.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
 clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   background-position-y: 0px;
